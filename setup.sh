@@ -18,7 +18,8 @@ packages=(
 
 # Install packages using --no-binary flag to avoid encoding issues
 for package in "${packages[@]}"; do
-    pip install --no-binary :all: "$package"
+    #pip install --no-binary :all: "$package"
+    pip install "$package"
 done
 
 # Install the IPython kernel for your virtual environment
